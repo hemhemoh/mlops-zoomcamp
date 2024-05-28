@@ -1,0 +1,20 @@
+artifact_path: models_mlflow
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.11.7
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.core.Booster
+    model_format: xgb
+    xgb_version: 2.0.3
+mlflow_version: 2.13.0
+model_size_bytes: 15095750
+model_uuid: d625489bc3e349f7aceee82b01a15ae2
+run_id: afd0838bc34a43a590348cfdb846af0a
+utc_time_created: '2024-05-24 16:23:08.329764'
